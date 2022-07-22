@@ -8,8 +8,8 @@ public class Empleado extends Persona{
     private int sueldoBruto;
     private int salarioNeto;
     
-public Empleado(String nombre, String apellido, int cedula, Date fechaNac, int sueldoBruto, int salarioNeto){
-    super(nombre, apellido,cedula,fechaNac);
+public Empleado(String nombre, String apellido, int cedula, Date fechaNac, int sueldoBruto, int salarioNeto, String nacionalidad, EstadoCivil estadoCi,Sexo sex){
+    super(nombre, apellido,cedula,fechaNac,nacionalidad,estadoCi,sex);
     this.sueldoBruto = sueldoBruto;
     this.salarioNeto = salarioNeto;
 }
@@ -36,6 +36,9 @@ public Empleado(String nombre, String apellido, int cedula, Date fechaNac, int s
                 "\nApellido: "+getApellido()+
                 "\nCedula: "+getCedula()+
                 "\nFecha de nacimiento: "+getFechaNac()+
+                "\nNacionalidad: "+getNacionalidad()+
+                "\nEstado Civil: "+getEstadoCi()+
+                "\nSexo: "+getSex()+
                 "\nSueldo bruto: "+sueldoBruto+
                 "\nSalario neto: "+salarioNeto);
     }

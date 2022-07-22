@@ -5,8 +5,8 @@ import java.util.Date;
 public class Cliente extends Persona{
     private int numeroTelefono;
     
-public Cliente(String nombre, String apellido, int cedula, Date fechaNac,int numeroTelefono){
-    super(nombre, apellido,cedula,fechaNac);
+public Cliente(String nombre, String apellido, int cedula, Date fechaNac,int numeroTelefono, String nacionalidad, EstadoCivil estadoCi,Sexo sex){
+    super(nombre, apellido,cedula,fechaNac,nacionalidad,estadoCi,sex);
     this.numeroTelefono = numeroTelefono;
    
 }

@@ -6,8 +6,8 @@ import java.util.Date;
 public class Directivo extends Empleado{
     private String categoria;
 
-    public Directivo(String categoria, String nombre, String apellido, int cedula, Date fechaNac, int sueldoBruto, int salarioNeto) {
-        super(nombre, apellido, cedula, fechaNac, sueldoBruto, salarioNeto);
+    public Directivo(String categoria, String nombre, String apellido, int cedula, Date fechaNac, int sueldoBruto, int salarioNeto, String nacionalidad, EstadoCivil estadoCi,Sexo sex) {
+        super(nombre, apellido, cedula, fechaNac, sueldoBruto, salarioNeto,nacionalidad,estadoCi,sex);
         this.categoria = categoria;
     }
 
@@ -26,6 +26,9 @@ public class Directivo extends Empleado{
                 "\nCedula: "+getCedula()+
                 "\nCategoria: "+categoria+
                 "\nFecha de Nacimiento: "+getFechaNac()+
+                "\nNacionalidad: "+getNacionalidad()+
+                "\nEstado Civil: "+getEstadoCi()+
+                "\nSexo: "+getSex()+
                 "\nSaldo Bruto: "+getSueldoBruto()+
                 "\nSalario neto: "+getSalarioNeto());
     }

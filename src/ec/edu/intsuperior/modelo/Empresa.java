@@ -7,8 +7,8 @@ import java.util.Date;
 public class Empresa extends Persona{
 private String nombreEmpresa;
 
-    public Empresa(String nombre, String apellido, int cedula, Date fechaNac) {
-        super(nombre, apellido, cedula, fechaNac);
+    public Empresa(String nombre, String apellido, int cedula, Date fechaNac, String nacionalidad, EstadoCivil estadoCi,Sexo sex) {
+        super(nombre, apellido, cedula, fechaNac, nacionalidad, estadoCi, sex);
         this.nombreEmpresa = nombreEmpresa;
         
     }
