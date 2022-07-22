@@ -9,7 +9,7 @@ public class Persona {
     private String apellido;
     private int cedula;
     private Date fechaNac;
-
+    
     public Persona(String nombre, String apellido, int cedula, Date fechaNac) {
         this.nombre = nombre;
         this.apellido = apellido;

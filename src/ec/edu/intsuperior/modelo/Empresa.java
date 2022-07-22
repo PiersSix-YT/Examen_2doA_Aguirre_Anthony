@@ -21,6 +21,10 @@ private String nombreEmpresa;
         this.nombreEmpresa = nombreEmpresa;
     }
   
+    public void mostrarDatosEmpresa(){
+        System.out.println("==== DATOS DE LA EMPRESA ====");
+        System.out.println("Nombre de la empresa: "+getNombre());
+    }
 }
 
 

@@ -12,8 +12,6 @@ public Empleado(String nombre, String apellido, int cedula, Date fechaNac, int s
     super(nombre, apellido,cedula,fechaNac);
     this.sueldoBruto = sueldoBruto;
     this.salarioNeto = salarioNeto;
-    
-    
 }
 
     public int getSueldoBruto() {
@@ -31,14 +29,13 @@ public Empleado(String nombre, String apellido, int cedula, Date fechaNac, int s
     public void setSalarioNeto(int salarioNeto) {
         this.salarioNeto = salarioNeto;
     }
-    
-    
+
     public void mostrarDatosEmpleado(){
-        System.out.println("DATOS DEL EMPLEADO");
+        System.out.println("==== DATOS DEL EMPLEADO ====");
         System.out.println("Nombre: "+getNombre()+
                 "\nApellido: "+getApellido()+
                 "\nCedula: "+getCedula()+
-                "\nFecha de nacimiento: "+
+                "\nFecha de nacimiento: "+getFechaNac()+
                 "\nSueldo bruto: "+sueldoBruto+
                 "\nSalario neto: "+salarioNeto);
     }

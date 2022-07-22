@@ -20,7 +20,7 @@ public Cliente(String nombre, String apellido, int cedula, Date fechaNac,int num
     }
     
     public void mostrarDatosCliente(){
-        System.out.println("DATOS DEL CLIENTE");
+        System.out.println("==== DATOS DEL CLIENTE ====");
         System.out.println("Nombre: "+getNombre()+
                 "\nApellido: "+getApellido()+
                 "\nCedula: "+getCedula()+

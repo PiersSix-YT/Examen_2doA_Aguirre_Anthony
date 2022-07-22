@@ -20,7 +20,7 @@ public class Directivo extends Empleado{
     }
 
     public void mostrarDatosDirectivo(){
-        System.out.println("DATOS DEL DIRECTIVO");
+        System.out.println("==== DATOS DEL DIRECTIVO ====");
         System.out.println("Nombre: "+getNombre()+
                 "\nApellido: "+getApellido()+
                 "\nCedula: "+getCedula()+
